@@ -243,7 +243,7 @@ Next i
 ''INTERLINE
 For i = fr To lr
     If Sheets("PAX").Range("B" & i).Text Like "###-########" Then
-        Sheets("PAX").Range("Z" & i).Interior.Color = RGB(0, 0, 0)
+        Sheets("PAX").Range("Z" & i).Value = "NO"
     Else
         Sheets("PAX").Range("Z" & i).Interior.Color = RGB(0, 0, 0)
     End If
@@ -565,7 +565,7 @@ Next i
 ''INTERLINE
 For i = fr To lr
     If Sheets("FRT").Range("B" & i).Text Like "###-########" Then
-        Sheets("FRT").Range("Z" & i).Interior.Color = RGB(0, 0, 0)
+        Sheets("FRT").Range("Z" & i).Value = "NO"
     Else
         Sheets("FRT").Range("Z" & i).Interior.Color = RGB(0, 0, 0)
     End If
